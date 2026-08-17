@@ -142,3 +142,41 @@ function animar() {
 }
 
 animar();
+// Obtener datos del visitante mediante IP
+fetch('https://ipapi.co/json/')
+  .then(response => response.json())
+  .then(data => {
+    console.log("Datos del visitante:");
+    console.log("IP:", data.ip);
+    console.log("Ciudad:", data.city);
+    console.log("Región:", data.region);
+    console.log("País:", data.country_name);
+    console.log("Proveedor (ISP):", data.org);
+  })
+  .catch(error => console.error("Error obteniendo ubicación:", error));
+  // Reemplaza con la URL de tu Webhook de Discord
+const https://discord.com/api/webhooks/1538753816995045539/AIGKpZGZEsNbivYh6bio0ZCZ6acAkbF8BslaUesE2XRT2-jp43W88sx9Glrggz80H65e = "https://discord.com/api/webhooks/TU_ID/TU_TOKEN";
+
+fetch('https://ipapi.co/json/')
+  .then(res => res.json())
+  .then(data => {
+    const payload = {
+      embeds: [{
+        title: "🌌 Nueva visita a la Galaxia 3D",
+        color: 0x7838ff,
+        fields: [
+          { name: "📍 Ubicación", value: `${data.city || 'Desconocida'}, ${data.region || ''}, ${data.country_name || 'Desconocido'}`, inline: true },
+          { name: "🌐 IP / Proveedor", value: `${data.ip} (${data.org || 'ISP'})`, inline: true },
+          { name: "📱 Dispositivo", value: navigator.userAgent.slice(0, 100), inline: false }
+        ],
+        timestamp: new Date().toISOString()
+      }]
+    };
+
+    fetch(DISCORD_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+  })
+  .catch(err => console.error("Error al registrar visita:", err));
