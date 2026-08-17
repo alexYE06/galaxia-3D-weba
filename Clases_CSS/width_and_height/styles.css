@@ -1,0 +1,20 @@
+div{
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    background-color: blue;
+    width: 100px;
+}
+input{
+    width: 100%;
+}
+form{
+    width: 300px;
+}

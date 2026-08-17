@@ -1,0 +1,27 @@
+div{
+    width: 200px;
+    margin:auto;
+    font-size: 1.25rem;
+    text-align: center;
+    color: bisque;
+    font-size: 1rem;
+
+}
+body{
+    background-color: black;
+    font-size:100%;
+}
+input{
+    margin: 7px;
+    border:none;
+    border-bottom: 1px solid whitesmoke;
+    background-color: transparent;
+    font-size: 0.875rem;
+    color: white;
+    text-align: center;
+}
+.enviar{
+    border: 1px solid white;
+    color: whitesmoke;
+
+}
