@@ -155,7 +155,8 @@ fetch('https://ipapi.co/json/')
   })
   .catch(error => console.error("Error obteniendo ubicación:", error));
   // Reemplaza con la URL de tu Webhook de Discord
-const https://discord.com/api/webhooks/1538753816995045539/AIGKpZGZEsNbivYh6bio0ZCZ6acAkbF8BslaUesE2XRT2-jp43W88sx9Glrggz80H65e = "https://discord.com/api/webhooks/TU_ID/TU_TOKEN";
+// Webhook de Discord para registrar visitas
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1538753816995045539/AIGKpZGZESNbivyh6bio0ZC6acAkbF8BslaUesE2XRT2-jp43W88sx9GLrggz8OH65e";
 
 fetch('https://ipapi.co/json/')
   .then(res => res.json())
