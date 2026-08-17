@@ -157,7 +157,6 @@ fetch('https://ipapi.co/json/')
   // Reemplaza con la URL de tu Webhook de Discord
 // Webhook de Discord para registrar visitas
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1538758028013342751/vaMb2WV-SOGuNECIAEvmjgEMjAfhwO0644mNEiS-lfGP_UcWqUAXTAbL8JnfTjRmLWOA";
-
 // Envío automático de datos de visita
 fetch('https://ipwho.is/')
   .then(res => res.json())
